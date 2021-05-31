@@ -1,0 +1,53 @@
+{
+  "name": "TG-ForceSub Malayalam",
+  "description": "Telegram's Saassiest Malayalam Version Force Subscriber Bot",
+  "keywords": [
+    "telegram",
+    "best",
+    "FSub",
+    "Force Subscribe",
+    "Promoter"
+  ],
+  "website": "https://github.com/shamilhabeebnelli",
+  "repository": "https://github.com/shamilhabeebnelli/FSUB-Malayalam",
+  "logo": "https://telegra.ph/file/b4a84dedbd9eeb2a54dff.jpg",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your bot token, Get it from @Botfather.",
+      "required": true
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "Owner userid to use for getting logs..",
+      "required": false
+    },
+    "SUDO_USERS": {
+      "description": "(Optional) sudo user id seperated by space",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
