@@ -31,6 +31,10 @@
     "SUDO_USERS": {
       "description": "(Optional) sudo user id seperated by space",
       "required": false
+    },
+    "ENV": {
+      "description": "(Optional) sudo user id seperated by space",
+      "value": " ANYTHING"
     }
   },
   "addons": [
