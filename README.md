@@ -38,4 +38,5 @@ python3 bot.py
 
 ## Thanks to
 - [PyroGram](https://PyroGram.org)
+- [Charlie Viper](t.me/viperadnanxd)
 - As Usual ❣️ [Spechide](https://GitHub.com/spechide)
