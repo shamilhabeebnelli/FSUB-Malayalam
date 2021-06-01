@@ -92,7 +92,7 @@ def config(client, message):
           sql.add_channel(chat_id, input_str)
           message.reply_text(f"✅ **Force Subscribe നടപ്പിലാക്കിയിരിക്കുന്നു**\n__Force Subscribe നടപ്പിലാക്കി, ഇനി എല്ലാ ഗ്രൂപ്പ്‌ അംഗങ്ങളും ഈ [channel](https://t.me/{input_str}) ഇൽ ചെയ്താൽ മാത്രമെ ഗ്രൂപിൽ മെസ്സേജ് അയക്കാൻ പറ്റൂ.__", disable_web_page_preview=True)
         except UserNotParticipant:
-          message.reply_text(f"❗ **അച്ചോടാ... ഞാൻ ഈ [channel](https://t.me/{input_str}).} ഇൽ അഡ്മിൻ അല്ലാലോ 😐**\n__അവിടെയും എന്നെ ഒരു അഡ്മിൻ അക്കൂ... 😌.__", disable_web_page_preview=True)
+          message.reply_text(f"❗ **അച്ചോടാ... ഞാൻ ഈ [channel](https://t.me/{input_str}) ഇൽ അഡ്മിൻ അല്ലാലോ 😐**\n__അവിടെയും എന്നെ ഒരു അഡ്മിൻ അക്കൂ... 😌.__", disable_web_page_preview=True)
         except (UsernameNotOccupied, PeerIdInvalid):
           message.reply_text(f"❗ **Invalid Channel Username.**")
         except Exception as err:
